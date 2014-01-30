@@ -1,0 +1,27 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+.DS_Store
+applet
+application.linux
+application.macosx
+application.macosx32
+application.macosx64
+application.windows
+data
+*.zip
+*.png
+*.jar
+*.vlw
+*.tif
+*.class
+*.java
+*.pdf
+*.ttf
+*.csv
+*.stl
+
