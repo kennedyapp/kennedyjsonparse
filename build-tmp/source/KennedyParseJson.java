@@ -16,6 +16,12 @@ import java.io.IOException;
 
 public class KennedyParseJson extends PApplet {
 
+/*
+Simple example to parse JSON data exported from Kennedy.
+
+Displays cities around a circle
+*/
+
 
 
 SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -52,7 +58,7 @@ public void draw() {
 
 			for (int i = 0; i < jsonArray.size(); i++) {
 
-				a+=inc;
+				a += inc;
      			x = sin(a)*distance;
      			y = cos(a)*distance;
      			rad = atan2((0-y), (0-x));
@@ -64,9 +70,7 @@ public void draw() {
     				fill(10);
     				textSize(11);
     				text(jsonObject.getString("city"),distance,0);
-    			popMatrix();
-				
-				
+    			popMatrix();	
 				
 			}
 	}
